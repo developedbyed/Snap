@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 15px;
+}
+nav h1 {
+  font-size: 40px;
+
+  padding: 10px 80px;
+  font-family: "Satisfy", cursive;
+  font-weight: 200;
+}
+nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.carousel {
+  width: 80%;
+  height: 50vh;
+  margin: auto;
+  background-color: lightblue;
+  align-items: center;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  z-index: -100;
+}
+
+.carousel img {
+  width: 100%;
+}
+
+.arrow-left {
+  opacity: 0.5;
+  font-size: 30px;
+  left: 20px;
+  color: white;
+  position: absolute;
+}
+
+.arrow-right {
+  opacity: 0.5;
+  font-size: 30px;
+  right: 20px;
+  color: white;
+  position: absolute;
+}
+.arrow-left:hover,
+.arrow-right:hover {
+  opacity: 1;
+}
+.introduction {
+  height: 30vh;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+.introduction h1 {
+  padding: 30px;
+  font-size: 25px;
+}
+
+.banner1 {
+  width: 70%;
+  margin-right: auto;
+  height: 30vh;
+  background-color: khaki;
+  margin-bottom: 100px;
+}
+.banner2 {
+  width: 70%;
+  margin-left: auto;
+  height: 30vh;
+  background-color: khaki;
+}
