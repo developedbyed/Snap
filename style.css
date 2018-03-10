@@ -2,12 +2,25 @@
   margin: 0;
   padding: 0;
 }
+
+.sticky {
+  position: fixed;
+  width: 100%;
+  background-color: #34495e;
+  color: white;
+  top: 0;
+  margin: 0;
+  min-height: 5vh;
+  animation: slideIn 1s ease-in-out;
+}
+.sticky a {
+  color: white;
+}
 nav {
   min-height: 10vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 15px;
 }
 nav h1 {
   font-size: 40px;
@@ -74,15 +87,63 @@ nav a {
 }
 
 .banner1 {
+  transform: translateX(-100%);
   width: 70%;
   margin-right: auto;
   height: 30vh;
-  background-color: khaki;
   margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Montserrat", sans-serif;
+  background-color: #34495e;
+  color: white;
+  border-bottom-right-radius: 50px;
+  transition: transform 1s;
+}
+.banner1 h1 {
+  width: 20%;
+  order: 1;
+  font-size: 25px;
+}
+.banner1 p {
+  width: 50%;
+  line-height: 2.5em;
+}
+.active {
+  transform: translateX(0%) !important;
 }
 .banner2 {
+  font-family: "Montserrat", sans-serif;
   width: 70%;
-  margin-left: auto;
   height: 30vh;
-  background-color: khaki;
+  background-color: #34495e;
+  color: white;
+  margin-left: auto;
+  transform: translateX(100%);
+  transition: transform 1s;
+  border-top-left-radius: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.banner2 h1 {
+  width: 20%;
+}
+.banner2 p {
+  width: 50%;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(-0);
+  }
+}
+
+.wedding-section {
+  height: 200vh;
+  background-color: lightblue;
 }
